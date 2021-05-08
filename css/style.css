@@ -1,0 +1,141 @@
+:root {
+    --principalFont: 'Yanone Kaffeesatz', sans-serif;
+
+    --white: #ffffff;
+    --lightGrey: #c6c8c8;
+    --darkGrey: #474f51;
+    --grey: #a0a8ab;
+    --red: #ed391b;
+}
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body {
+    font-family: var(--principalFont);
+   
+}
+a{
+    text-decoration: none;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.2rem 0;
+    background: #3B4346 url(../img/bg01.jpg);
+    width: 100%;
+}
+.header .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px #272d30;
+    box-shadow: inset 0px -1px 0px 0px #51575a;
+    text-shadow: -1px -1px 1px rgb(0 0 0 / 75%);
+    width: 100%;
+}
+.header .navbar .title {
+    padding-right: 15rem;
+}
+.header .navbar .title a {
+    color: var(--white);
+    font-size: 3rem;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+    
+}
+.navigation__link {
+    font-size: 25px; 
+    padding-right: 3.5rem;
+    color: var(--lightGrey);
+   
+}
+.section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem 0;
+    border-top: solid 1px #222628;
+    box-shadow: inset 0px 1px 0px 0px #3e484a;
+    width: 100%;
+}
+.section__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45vw;
+}
+.section img{
+    border: 5px solid var(--white);
+}
+.section__container button {
+    width: 10rem;
+    background-color: #ed391b;
+    color: #fff;
+    height: 4rem;
+    font-size: 1.5rem;
+   font-weight: 5;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 75%), inset 0px 2px 0px 0px rgb(255 192 192 / 50%), inset 0px 0px 0px 2px rgb(255 96 96 / 85%), 3px 3px 3px 1px rgb(0 0 0 / 15%);
+    text-shadow: -1px -1px 1px rgb(0 0 0 / 50%);
+}
+
+h2 {
+    font-size: 36px;
+    color:var(--white);
+    font-weight: 3;
+}
+.container {
+    min-width: 100vw;
+    padding: 4.5rem 0;
+}
+.features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #353D40 url(../img/bg02.jpg);
+    padding: 3rem 0;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.more-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #D4D9DD url(images/bg03.jpg);
+   
+}
+.stuff__lists {
+    display: flex;
+}
+footer {
+    
+    background: #D4D9DD url(images/bg03.jpg);
+  
+}
