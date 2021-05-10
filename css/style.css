@@ -15,6 +15,8 @@ html {
   }
 body {
     font-family: var(--principalFont);
+    font-weight: 200;
+    background: #D4D9DD url(../img/bg03.jpg);
    
 }
 a{
@@ -33,45 +35,49 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2.2rem 0;
+    padding-top: 2rem;
     background: #3B4346 url(../img/bg01.jpg);
-    width: 100%;
+   min-width: 100vw;
 }
 .header .navbar {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-bottom: solid 1px #272d30;
-    box-shadow: inset 0px -1px 0px 0px #51575a;
     text-shadow: -1px -1px 1px rgb(0 0 0 / 75%);
     width: 100%;
 }
 .header .navbar .title {
-    padding-right: 15rem;
+    padding-right: 13rem;
 }
 .header .navbar .title a {
     color: var(--white);
-    font-size: 3rem;
+    font-size: 3.2rem;
+    font-weight: 300;
+    
 }
 .navigation {
   display: flex;
   flex-direction: row;
   align-items: space-between;
-    
 }
 .navigation__link {
     font-size: 25px; 
-    padding-right: 3.5rem;
+    padding-left: 3.6rem;
     color: var(--lightGrey);
+    font-weight: 200;
    
+}
+.navigation__link:hover {
+    color: var(--white);
 }
 .section {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    padding: 3.5rem 0;
+    flex-wrap: wrap;
+    padding-top: 1rem;
     border-top: solid 1px #222628;
     box-shadow: inset 0px 1px 0px 0px #3e484a;
     width: 100%;
@@ -79,63 +85,201 @@ a{
 .section__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 45vw;
+    justify-content: center;
+    width: 40rem;
+    padding-bottom: 4rem;
 }
 .section img{
-    border: 5px solid var(--white);
+    border: 10px solid var(--white);
 }
 .section__container button {
-    width: 10rem;
+    background-image: -webkit-linear-gradient(top, #ed391b, #ce1a00);
     background-color: #ed391b;
     color: #fff;
-    height: 4rem;
-    font-size: 1.5rem;
-   font-weight: 5;
+    font-size: 2em;
+    width: 8em;
+    height: 2em;
+    text-align: center;
+    font-weight: 300;
     border-radius: 10px;
-    box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 75%), inset 0px 2px 0px 0px rgb(255 192 192 / 50%), inset 0px 0px 0px 2px rgb(255 96 96 / 85%), 3px 3px 3px 1px rgb(0 0 0 / 15%);
-    text-shadow: -1px -1px 1px rgb(0 0 0 / 50%);
+   
 }
 
-h2 {
+.section__container h2 {
     font-size: 36px;
     color:var(--white);
     font-weight: 3;
-}
-.container {
-    min-width: 100vw;
-    padding: 4.5rem 0;
+    
 }
 .features {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    min-width: 100vw;
     background: #353D40 url(../img/bg02.jpg);
     padding: 3rem 0;
+    border-top: solid 1px #222628;
+    box-shadow: inset 0px 1px 0px 0px #3e484a;
+    
 }
+.features__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    width: 20vw;
+   
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-shadow: -1px -1px 1px rgb(0 0 0 / 75%);
+    color: #ffffff;
+    padding: 0 0.8rem;
+    
+}
+.feature h3 {
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+.feature__text {
 
+    font-size: 1.07rem;
+    line-height: 2;
+    color: var(--lightGrey);
+    margin-top: 0px;
+   
+}
+.feature__text--link {
+    text-decoration: underline;
+     color: var(--white);
+ }
+ .feature__image {
+     border: 10px solid var(--white);
+ }
 .about-us {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0;
+    background: #f7f7f7 url(../img/bg04.png);
+    padding: 45px 0 45px 0;
+    width: 100%;
 }
+.about-us .about-us__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 3rem; 
+}
+.about-us__item {
+    width: 22rem;
+    height: 30rem;
+    padding: 20px;
+    margin-right: 2rem;
+    background-color: var(--white);
+    box-shadow: 2px 2px 2px 1px rgb(128 128 128 / 10%);
+}
+.about-us__item h2{
+  color: #373f42;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.about-us__item h3 {
+    color: #96a9b5;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+.about-us__item p {
+    color: #373f42;
+    font-weight: 300;
+    line-height: 2;
+    font-size: 1.1rem;
+}
+.about-us__item--list {
+    list-style-image: url(../img/icon-checkmark.png);
+}
+.about-us__item--list li{
+    border-bottom: solid 1px #e2e6e8;
+    line-height: 3;
+    color: #373F42;
+    font-weight: 300;
+    font-size: 1.4rem;
+ }
 
+.about-us__item--items {
+    list-style: none;
+    width: 100%;
+}
+.about-us__item--items li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #e2e6e8;
+    padding-right: 10px;
+}
+.about-us__item--items li img {
+    width: 80px;
+    height: 60px;
+    padding-right: 20px;
+}
+.about-us__item--items li .text{
+    width: 100%;
+}
+.about-us__item--items li .text .p2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #474f51;
+}
+.about-us__item--items li .text .p1 {
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 1.8em;
+}
+.about-us__item--items li:last-child, .about-us__item--list li:last-child {
+    border: none;
+}
 .more-information {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: #D4D9DD url(images/bg03.jpg);
-   
 }
 .stuff__lists {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding:1rem;
+    width: 100%;
+
+}
+.stuff__lists ul{
+    list-style: none;
+    
+}
+.stuff__lists li{
+    text-decoration: underline;
+    
+}
+.blurb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 25%;
 }
 footer {
     
-    background: #D4D9DD url(images/bg03.jpg);
+   
   
 }
