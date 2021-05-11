@@ -21,8 +21,15 @@
             <a  class="navigation__link" href="#">Three Column</a>
             <a  class="navigation__link" href="#">Two Column #1</a>
             <a  class="navigation__link" href="#">Two Column #2</a>
-            <a  class="navigation__link" href="#">One Column</a>
+            <a  class="navigation__link" href="one-column.html">One Column</a>
         </div> 
+        <div id="hamburger">
+            <button>
+                <span class="top-line"></span>
+                <span class="middle-line"></span>
+                <span class="bottom-line"></span>
+            </button>
+        </div>
     </nav>
     
     <section class="section">
@@ -39,7 +46,8 @@
 
 <div class="features">  
     <div class="features__container">
-        <div class="feature">
+        <section class="s1">
+             <div class="feature">
             <img class="feature__image" src="img/pic01.jpg" alt="welcome">
             <h3>Welcome to Halcyonic</h3>
             <p class="feature__text">This is <span class="feature__text--white">Halcyonic</span>, a free site template by <a class="feature__text--link" href="https://twitter.com/ajlkn">AJ</a> for <a  class="feature__text--link" href="https://html5up.net/">HTML5 UP</a>.
@@ -51,7 +59,9 @@
             <p class="feature__text">Yes! Halcyonic is built to be fully responsive so it looks great at every screen size,
             from desktops to tablets to mobile phones.</p>
             </div>
-        <div class="feature">
+        </section>
+       <section class="s2">
+       <div class="feature">
             <img class="feature__image" src="img/pic03.jpg" alt="license">
             <h3>License Info</h3>
             <p class="feature__text">Halcyonic is licensed under the <a class="feature__text--link" href="https://html5up.net/license">CCA</a> license,
@@ -63,6 +73,7 @@
             <p class="feature__text">Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. 
             Suspendisse eu varius nibh. Suspendisse vitae magna mollis.</p>
         </div> 
+       </section>    
     </div>      
 </div>
 
@@ -72,7 +83,7 @@
             <section class="about-us__item">
                 <h2>Who We Are</h2>
                 <h3>A subheading about who we are</h3>
-                <img src="img/pic05.jpg" alt="pic">
+                <img class="about-us__item--img1" src="img/pic05.jpg" alt="pic">
                 <p>Duis neque nisi, dapibus sed mattis quis, rutrum accumsan magna sed. Suspendisse eu varius nibh. 
                 Suspendisse vitae magna eget odio amet mollis justo facilisis quis. Sed sagittis amet lorem ipsum.</p>
             </section>
@@ -119,10 +130,10 @@
     </div>
 </div>
 
-    <div class="container">
-        <div class="more-information">
-            <section>
-                <p>Links to Important Stuff</p>
+
+<div class="more-information">
+            <section class="stuff">
+                <p class="stuff__title">Links to Important Stuff</p>
                 <div class="stuff__lists">
                     <ul>
                         <li>Neque amet dapibus</li>
@@ -151,13 +162,13 @@
                 </div>
                </section>
        
-               <section class="blurb">
-                  <p>An Informative Text Blurb</p>
-                  <p>Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi, dapibus sed mattis quis, sed rutrum accumsan sed.
+            <section class="blurb">
+                  <p class="blurb__title">An Informative Text Blurb</p>
+                  <p class="blurb__text">Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi, dapibus sed mattis quis, sed rutrum accumsan sed.
                    Suspendisse eu varius nibh lorem ipsum amet dolor sit amet lorem ipsum consequat gravida justo mollis.</p>
-               </section>
-        </div>
+            </section>
     </div>
+    
 
     <footer><p>© Untitled. All rights reserved. | Design: <a href="https://html5up.net/">HTML5 UP</a> | Demo Images: <a href="https://unsplash.com/">Unsplash</a></p></footer>
 </div>
