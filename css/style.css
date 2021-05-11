@@ -17,8 +17,9 @@ body {
     font-family: var(--principalFont);
     font-weight: 200;
     background: #D4D9DD url(../img/bg03.jpg);
+    overflow-x: hidden;
 }
-a{
+a {
     text-decoration: none;
 }
 .wrapper {
@@ -35,7 +36,7 @@ a{
     align-items: center;
     padding-top: 2rem;
     background: #3B4346 url(../img/bg01.jpg);
-    min-width: 100vw;
+    width: 100vw;
 }
 .header .navbar {
     display: flex;
@@ -143,7 +144,7 @@ a{
 }
 .features {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-width: 100vw;
@@ -157,7 +158,6 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem;
     width: 5rem;
 }
 .features .features__container .s1, .features .features__container .s2 {
@@ -170,7 +170,7 @@ a{
     align-items: flex-start;
     text-shadow: -1px -1px 1px rgb(0 0 0 / 75%);
     color: #ffffff;
-    padding: 0 0.8rem;   
+    padding: 0 1rem;
 }
 .feature h3 {
     color: var(--white);
@@ -179,12 +179,10 @@ a{
     font-weight: 300;
 }
 .feature__text {
-
     font-size: 1.07rem;
     line-height: 2;
     color: var(--lightGrey);
     margin-top: 0px;
-   
 }
 .feature__text--link {
     text-decoration: underline;
@@ -406,6 +404,57 @@ footer a:hover {
       font-size: 1.1rem;
       line-height: 2;
   }
+  .three-column{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    background: #f7f7f7 url(../img/bg04.png);
+    min-height: 100vh;
+    padding: 45px 0 45px 30px;
+  }
+  .three-column__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+     
+  }
+  .three-column__container .c1, .three-column__container .c2,.three-column__container .c3 {
+    padding: 40px 30px 45px 30px;
+    box-shadow: 2px 2px 2px 1px rgb(128 128 128 / 10%);
+    background-color: #fff;
+    margin-right: 2rem;
+  }
+  .three-column__container .c1, .three-column__container .c3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20vw;
+  }
+  .three-column__container .c2 {
+    width: 50vw;
+  }
+  .three-column__container h2{
+    color: #373f42;
+    font-weight: 300;
+    font-size: 2.1rem;
+  }
+  .three-column__container .c1 ul, .three-column__container .c3 ul {
+    list-style-type: none;     
+    padding: 0;
+  }
+  .three-column__container .c1 ul li, .three-column__container .c3 ul li {
+    border-bottom: solid 1px #e2e6e8;
+  }
+  .three-column__container .c1 ul li:last-child, .three-column__container .c3 ul li:last-child {
+    border-bottom: none;
+  }
+  .three-column__container .c1 ul li a, .three-column__container .c3 ul li a {
+      line-height: 2;
+      text-decoration: underline;
+      font-weight: 300;
+      color: var(--red);
+  }
 
 @media (max-width: 1200px) {
         .header  {
@@ -430,10 +479,10 @@ footer a:hover {
         width: 100vw;
         padding-left: 3rem;
     }
-       .navbar .navigation {
+    .navbar .navigation {
              display: none;
          }
-         #hamburger {
+    #hamburger {
            
             top: 7px;
             left: 5px;
@@ -441,18 +490,17 @@ footer a:hover {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-         } 
-         .features .features__container {
+     } 
+    .features .features__container {
             display: flex;
             flex-direction: column;
-           max-width: 100vw;
-        }
+    }
   }
   @media (max-width: 768px) {
     .header .section {
         max-width: 100vw;
     }
-    .header .section img{
+    .header .section img, .header .section .section__container button{
         max-width: 100vw;
     }
     .header .section .section__container {
@@ -465,5 +513,8 @@ footer a:hover {
     .features .features__container .s1, .features .features__container .s2 {
         display: flex;
         flex-direction: column;
+    }
+    .features .features__container .s1 .feature img, .features .features__container .s2 .feature img{
+        max-width: 100vw;
     }
 }
